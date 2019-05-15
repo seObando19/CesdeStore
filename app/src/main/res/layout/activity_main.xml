@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/Id"
+        android:id="@+id/Id_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -24,7 +24,7 @@
         app:layout_constraintVertical_bias="0.511" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnBuscar"
         android:layout_width="163dp"
         android:layout_height="59dp"
         android:layout_marginStart="8dp"
@@ -32,6 +32,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/buscar"
+        android:onClick=""
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
@@ -88,7 +89,7 @@
         app:layout_constraintGuide_begin="205dp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/productos"
         android:layout_width="190dp"
         android:layout_height="49dp"
         android:layout_marginTop="8dp"
@@ -103,7 +104,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/valor"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -119,7 +120,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/categoria"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -134,7 +135,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/descrip"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -149,7 +150,7 @@
         app:layout_constraintVertical_bias="0.569" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnInsert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -157,6 +158,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/insertar"
+        android:onClick="insertarProducto"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toStartOf="@+id/guideline7"
         app:layout_constraintStart_toStartOf="parent"
