@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void insertarProducto(View view) {
-        servicioHttp("aqui debe ir la ruta");
+        servicioHttp("http://172.16.59.246:81/crud/insert_product.php");
 
     }
 }
